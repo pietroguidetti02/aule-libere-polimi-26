@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  polimi-bot:
+    build: .
+    container_name: polimi_bot
+    restart: always
+    # Mappa i file importanti fuori dal container per non perderli
+    volumes:
+      - ./aulelibere_pp:/app/aulelibere_pp
+      - ./log:/app/log
+    # Imposta le variabili d'ambiente
+    environment:
+      - TOKEN=8029414688:AAHByA4WkWi4Qsmv7cch4c-7q3wxWorXcx4
+      - TZ=Europe/Rome
+    # Limita le risorse (opzionale, ma utile per la tua tranquillità)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
