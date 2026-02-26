@@ -1,0 +1,77 @@
+2026-01-19 23:14:46,072 [INFO] Scheduler started
+2026-01-19 23:14:55,931 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:14:58,189 [INFO] 586442964 : PietroGuidetti in  set location state
+2026-01-19 23:15:01,725 [INFO] 586442964 : PietroGuidetti in set day state
+2026-01-19 23:15:04,475 [INFO] 586442964 : PietroGuidetti in set start state
+2026-01-19 23:15:07,025 [INFO] 586442964 : PietroGuidetti in the set end time state and search
+2026-01-19 23:15:09,202 [INFO] 586442964 : PietroGuidetti search was: Milano Città Studi 23/01/2026 10 13
+2026-01-19 23:15:43,761 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:15:45,126 [INFO] 586442964 : PietroGuidetti in  set location state
+2026-01-19 23:15:49,828 [INFO] 586442964 : PietroGuidetti in set day state
+2026-01-19 23:15:51,189 [INFO] 586442964 : PietroGuidetti in set start state
+2026-01-19 23:15:52,221 [INFO] 586442964 : PietroGuidetti in the set end time state and search
+2026-01-19 23:15:55,165 [INFO] 586442964 : PietroGuidetti search was: Milano Città Studi 22/01/2026 10 14
+2026-01-19 23:16:21,848 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:16:23,867 [INFO] 586442964 : PietroGuidetti in  settings
+2026-01-19 23:16:25,413 [INFO] 586442964 : PietroGuidetti in set language
+2026-01-19 23:16:27,543 [INFO] 586442964 : PietroGuidetti in  settings
+2026-01-19 23:16:29,370 [INFO] 586442964 : PietroGuidetti in set campus
+2026-01-19 23:16:30,898 [INFO] 586442964 : PietroGuidetti in  settings
+2026-01-19 23:16:32,810 [INFO] 586442964 : PietroGuidetti in set time
+2026-01-19 23:16:34,465 [INFO] 586442964 : PietroGuidetti canceled.
+2026-01-19 23:16:35,690 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:16:37,468 [INFO] 586442964 : PietroGuidetti in  set location state
+2026-01-19 23:16:45,643 [INFO] 586442964 : PietroGuidetti in set day state
+2026-01-19 23:16:46,773 [INFO] 586442964 : PietroGuidetti in set start state
+2026-01-19 23:16:47,737 [INFO] 586442964 : PietroGuidetti in the set end time state and search
+2026-01-19 23:16:54,296 [ERROR] Exception during search: Message is too long
+Traceback (most recent call last):
+  File "C:\Users\Pietro Guidetti\Desktop\personalProjects\2026\aule_libere_polimi_fiz_telegram_bot\AuleLiberePoliMi\bot.py", line 373, in end_state
+    update.message.reply_text(messaggio, parse_mode=ParseMode.HTML, reply_markup=ReplyKeyboardMarkup(initial_keyboard))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        chat_id=self.chat_id,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        entities=entities,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'sendMessage',
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        api_kwargs=api_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+        endpoint=endpoint,
+    ...<6 lines>...
+        api_kwargs=api_kwargs,
+    )
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+           ~~~~~~~~~~~~~~~~~^
+        f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+        'POST',
+    ...<3 lines>...
+        **urlopen_kwargs,
+    )
+  File "C:\Users\Pietro Guidetti\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is too long

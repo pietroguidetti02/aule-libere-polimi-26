@@ -1,0 +1,13 @@
+2026-01-19 23:11:31,572 [INFO] Scheduler started
+2026-01-19 23:12:27,150 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:12:30,248 [INFO] 586442964 : PietroGuidetti in  set location state
+2026-01-19 23:12:34,049 [INFO] 586442964 : PietroGuidetti in set day state
+2026-01-19 23:12:38,636 [INFO] 586442964 : PietroGuidetti in set start state
+2026-01-19 23:12:41,721 [INFO] 586442964 : PietroGuidetti in the set end time state and search
+2026-01-19 23:12:42,717 [INFO] 586442964 : PietroGuidetti search was: Milano Città Studi 20/01/2026 8 10
+2026-01-19 23:12:47,575 [INFO] 586442964 : PietroGuidetti in  choose initial state
+2026-01-19 23:12:50,779 [INFO] 586442964 : PietroGuidetti in  set location state
+2026-01-19 23:12:54,655 [INFO] 586442964 : PietroGuidetti in set day state
+2026-01-19 23:12:57,730 [INFO] 586442964 : PietroGuidetti in set start state
+2026-01-19 23:13:00,252 [INFO] 586442964 : PietroGuidetti in the set end time state and search
+2026-01-19 23:13:02,786 [INFO] 586442964 : PietroGuidetti search was: Milano Città Studi 23/01/2026 10 13
