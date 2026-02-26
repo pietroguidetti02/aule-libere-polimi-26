@@ -1,6 +1,9 @@
+disclaimer: all this repo comes from the work of another guy, i just fixed his great work.
+href="https://github.com/feDann/AuleLiberePoliMi">link here</a>
+
 # Aule Libere Polimi
 Since the PoliMi site no longer allows people to search for free classrooms this bot was necessary!
-It simply search for the classroom status on the chosen day and then find the free classroom using your preferred time slot. You can add it on telegram with this <a href="https://telegram.me/auleliberepolimi_bot">link</a>
+It simply search for the classroom status on the chosen day and then find the free classroom using your preferred time slot. You can add it on telegram with this <a href="https://telegram.me/AuleLiberePolimi_NEW_2026_bot">link</a>
 
 
 <table>
@@ -38,4 +41,5 @@ TOKEN=YOURTOKEN
 
  # Disclaimer
 This bot will work as long as the PoliMi website keeps the same layout
+
 
